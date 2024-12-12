@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.fondo {
+    background-image: url(/imagenes/2fondo.png);
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    min-height: 300vh;
+    background-repeat: no-repeat;
+}
+
+.fondo2 {
+    background-image:  url(/imagenes/3fondo.png);
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    min-height: 300vh;
+    background-repeat: no-repeat;
+}
+
+.fondo4 {
+    background-image:  url(/imagenes/contactanosFondo.png);
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    min-height: 200vh;
+    background-repeat: no-repeat;
+}
+
+.contactar-fondo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.logo {
+    color: #FFFDFC;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    background-position: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: #d407fd;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 70px;
+}
+
+.menu-label {
+    cursor: pointer;
+    display: none;
+}
+
+.texto {
+    padding: 100px;
+}
+
+.foto {
+    margin: 0px 0;
+}
+
+.caja {
+    display: flex;
+    padding: 50px 50px;
+    margin: 200px 0;
+    
+    position: relative;
+}
+
+.cajas {
+    margin: 15px 0;
+}
+
+.h1 {
+    font-size: 75px;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.caja1 {
+    background-color: #d407fd;
+    height: 50px;
+    width: 50px;
+    background-position: right !important;
+}
+
+.espacio {
+    margin: 300px 120px 120px;
+    padding: 50px;
+    border: 2px solid rgb(248, 5, 196);
+    height: 200px;
+    width: 500px;
+}
+
+.espacio2 {
+    border: 2px solid purple;
+    color: #FFFDFC;
+    font-size: 20px;
+    margin: 300px 0px;
+    padding: 50px;
+    height: 200px;
+    width: 500px;
+}
+
+.espacio3 {
+    border: 2px solid purple;
+    color: #FFFDFC;
+    font-size: 20px;
+    margin: 0px 120px;
+    padding: 80px;
+    height: 200px;
+    width: 500px;
+}
+
+.espacio4 {
+    border: 2px solid rgb(248, 5, 196);
+    background-position: center;
+    margin: 0px 120px;
+    padding: 10px 60px;
+    height: 200px;
+    width: 250px;
+}
+
+.espacio5 {
+    background-position: center;
+    margin: 120px 120px;
+    padding: 50px;
+    background-color: #e470fc;
+    height: 250px;
+    width: 200px;
+}
+
+.bajar {
+    margin: 60px 0;
+}
+
+.contacta {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    margin: 210px;
+    padding: 20px;
+    gap: 10px;
+    width: 1000px;
+}
+
+.box-info {
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.alinear {
+    text-align: left;
+    letter-spacing: 5px !important;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 1rem;
+}
+
+.data > i {
+    color: #d407fd;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+.links > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: #e470fc;
+    text-align: center;
+    transition: .1s;
+}
+
+.links > a > i{
+    color: #FFFDFC;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline: none;
+    background: rgba(255 255 255 / .1);
+    border: 3px solid transparent;
+    letter-spacing: 1 px;
+    transition: .3s;
+    color: #fff;
+}
+
+.input-box > textarea {
+    width: 100%;
+    height: 130px;
+    background: rgba(255 255 255 / .1);
+    border: 3px solid transparent;
+    letter-spacing: 1 px;
+    transition: .3s;
+    color: #fff;
+    padding: 10px;
+}
+
+form > button {
+    background: #d407fd;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+form > button:hover.links > a :hover {
+    background: #e470fc;
+}
+
+
+
+
+
+
+
