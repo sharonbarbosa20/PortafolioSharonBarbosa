@@ -6,68 +6,58 @@
     <title>Portafolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
-  <body class="contactar-fondo">
-    <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 fondo4">
-            <!--<img src="imagenes/2fondo.png" alt="">-->
-            <div class="row menu conteiner">
-              <div class="col-2 col-sm-2 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-              <input type="checkbox" id="menu">
-              <label for="menu">
-                <img src="imagenes/Recurso 1logo.svg" width="80px" class="menu-icono animate-animated animate__flip">
-              </label>
-            </div>
-            <div >
-              <nav class="navbar">
-                <ul>
-                  <li><a href="index.html">Inicio</a></li>
-                  <li><a href="portafolio.html">Mis Trabajos</a></li>
-                  <li><a href="articulos.html">Articulos</a></li>
-                  <li><a href="contactanos.html">Contáctanos</a></li>
-                </ul>
-              </nav>
-            </div>
-            </div>
+  <body>
+    <header class="container-fluid">
+      <a href="#" class="logo animate__animated animate__flip">
+        <img src="imagenes/Recurso 1logo.svg" class="logo-img">
+      </a>  
+
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="portafolio.html">Portafolio</a>
+        <a href="articulos.html">Blog</a>
+        <a href="contactanos.html">Contactanos</a>
+      </nav>
+    </header> 
     <div class="contacta">
-        <div class="box-info">
-            <h1 class="alinear">CONTÁCTATE CONMIGO</h1>
-            <div class="data">
-                <p><i class="fa-solid fa-phone"><img src="/imagenes/phone-solid.svg" width="20px" ></i>+57 3209351633</p>
-                <p><i class="fa-solid fa-envelope"><img src="/imagenes/message-solid.svg" width="20px"></i>sharon.barbosa19@gmail.com</p>
-                <p><i class="fa-solid- fa-location-dot"><img src="/imagenes/location-dot-solid.svg" width="20px"></i>Bogotá Kra 13 a este #14a 15 sur</p>
-            </div>
-            <div class="links">
-                <a href="#"><i class="fa-brands fa-facebook"><img src="/imagenes/facebook-brands-solid.svg" width="30px"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"><img src="/imagenes/instagram-brands-solid (1).svg" width="30px"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"><img src="/imagenes/whatsapp-brands-solid.svg" width="30px"></i></a>
-            </div>
-        </div>
-
-        <form>
-            <div class="input-box">
-                <input type="text" required placeholder="Nombres y Apellidos">
-            </div>
-            <div class="input-box">
-                <input type="email" required placeholder="Correo electrónico">
-            </div>
-            <div class="input-box">
-                <input type="text" required placeholder="Asunto">
-            </div>
-            <div class="input-box">
-                <textarea cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-
-        <div class="row">
-          <div class="col-12">  </div>
-          <div class="col-12 fotocontac">
-            <img src="/imagenes/DSC_0284-removebg-preview.png" width="800px">
+      <div class="box-info">
+          <h1 class="alinear">CONTÁCTATE CONMIGO</h1>
+          
+      </div>
+  
+      <!-- Formulario -->
+      <form>
+          <div class="input-box">
+              <input type="text" required placeholder="Nombres y Apellidos">
           </div>
+          <div class="input-box">
+              <input type="email" required placeholder="Correo electrónico">
+          </div>
+          <div class="input-box">
+              <input type="text" required placeholder="Asunto">
+          </div>
+          <div class="input-box">
+              <textarea cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+          <div class="data">
+            <p><img src="imagenes/phone-solid.svg" width="20px" alt="Phone"> +57 3209351633</p>
+            <p><img src="imagenes/message-solid.svg" width="20px" alt="Email"> sharon.barbosa26@gmail.com</p>
+            <p><img src="imagenes/location-dot-solid.svg" width="20px" alt="Location"> Bogotá Kra 13 a este #14a 15 sur</p>
         </div>
-    </div>
+        <div class="links">
+            <a href="https://es-la.facebook.com/login/device-based/regular/login/"><img src="imagenes/facebook-brands-solid.svg" width="30px" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="imagenes/instagram-brands-solid (1).svg" width="30px" alt="Instagram"></a>
+            <a href="https://web.whatsapp.com/"><img src="imagenes/whatsapp-brands-solid.svg" width="30px" alt="WhatsApp"></a>
+        </div>
+          <div class="foto center">
+              <img src="imagenes/DSC_0284-removebg-preview.png" alt="Imagen de contacto">
+          </div>
+      </form>
+  </div>
+  
     
 </div>
 </div>

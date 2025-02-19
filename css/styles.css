@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #82059b;
+    background-color: #ac32d1;
     background-size: cover;
 }
 
@@ -29,7 +29,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #d407fd;
+    color: #6c0381;
 }
 
 .logo {
@@ -38,7 +38,7 @@ nav a:hover {
 }
 
 .logo img {
-    height: 50px;
+    height: 80px;
     margin-left: 10px;
 }
 
@@ -56,34 +56,6 @@ nav a:hover {
     min-height: 300vh;
     background-repeat: no-repeat;
 }
-
-.fondo2 {
-    background-image:  url(/imagenes/3fondo.png);
-    background-size: 100%;
-    width: 100%;
-    height: 100vh;
-    min-height: 300vh;
-    background-repeat: no-repeat;
-}
-
-.fondo4 {
-    background-image:  url(/imagenes/contactanosFondo.png);
-    background-size: 100%;
-    width: 100%;
-    height: 100vh;
-    min-height: 200vh;
-    background-repeat: no-repeat;
-}
-
-.contactar-fondo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .conteiner {
     max-width: 1200px;
     margin: 0 auto;
@@ -126,8 +98,81 @@ nav a:hover {
     background-position: right !important;
 }
 
+/* Estilo base */
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 .espacio {
-    margin: 300px 120px 120px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.espacio2, .espacio3 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.espacio4 {
+    text-align: center;
+}
+
+.img-work, .img-thumbnail {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Para pantallas grandes, imágenes a la mitad del contenedor */
+@media (min-width: 768px) {
+    .espacio, .espacio4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .espacio2 {
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+
+    .img-work {
+        max-width: 400px;
+    }
+
+    .img-thumbnail {
+        max-width: 120px;
+    }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .espacio2, .espacio3 {
+        font-size: 0.9rem;
+    }
+
+    .img-work {
+        max-width: 90%;
+    }
+
+    .img-thumbnail {
+        max-width: 100%;
+    }
+}
+
+
+.espacio {
+    margin: 140px 120px 120px;
     padding: 50px;
     border: 2px solid rgb(248, 5, 196);
     height: 200px;
@@ -138,7 +183,7 @@ nav a:hover {
     border: 2px solid purple;
     color: #FFFDFC;
     font-size: 20px;
-    margin: 300px 0px;
+    margin: 140px 0px;
     padding: 50px;
     height: 200px;
     width: 500px;
@@ -155,7 +200,7 @@ nav a:hover {
 }
 
 .espacio4 {
-    border: 2px solid rgb(248, 5, 196);
+    
     background-position: center;
     margin: 0px 120px;
     padding: 10px 60px;
@@ -171,6 +216,11 @@ nav a:hover {
     height: 250px;
     width: 200px;
 }
+
+.vidio {
+    margin: 0px;
+}
+
 
 .bajar {
     margin: 60px 0;
@@ -276,109 +326,122 @@ h1 {
     transition-delay: 0s;
 }
 
-
-
+/* Estilos generales */
 .contacta {
-    display: grid;
-    grid-template-columns: repeat(2,50%);
-    margin: 210px;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    gap: 10px;
-    width: 1000px;
 }
 
 .box-info {
-    color: #ffff;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+    text-align: center;
+    margin-bottom: 30px;
 }
+
+.box-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.data p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.input-box {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-box input, .input-box textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #eb88f8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9500b3;
+}
+
+.fotocontac img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Responsive: Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .box-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .data p {
+        font-size: 0.9rem;
+    }
+
+    .links a {
+        margin: 0 5px;
+    }
+
+    .input-box input, .input-box textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive: Pantallas medianas (tabletas y pantallas pequeñas) */
+@media (max-width: 1024px) {
+    .box-info h1 {
+        font-size: 2rem;
+    }
+
+    .input-box input, .input-box textarea {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1.1rem;
+    }
+}
+
+.data .link {
+    background-position: center;
+}
+
+
+
+
 
 .alinear {
     text-align: left;
     letter-spacing: 5px !important;
 }
 
-.data {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    font-size: 1rem;
-}
 
-.data > i {
-    color: #d407fd;
-    margin-right: 10px;
-    font-size: 25px;
-}
 
-.links {
-    display: flex;
-    gap: 15px;
-}
 
-.links > a {
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    background: #e470fc;
-    text-align: center;
-    transition: .1s;
-}
-
-.links > a > i{
-    color: #FFFDFC;
-    line-height: 40px;
-    font-size: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-}
-
-.input-box {
-    position: relative;
-}
-
-.input-box > input {
-    width: 100%;
-    height: 40px;
-    padding: 0 10px;
-    outline: none;
-    background: rgba(255 255 255 / .1);
-    border: 3px solid transparent;
-    letter-spacing: 1 px;
-    transition: .3s;
-    color: #fff;
-}
-
-.input-box > textarea {
-    width: 100%;
-    height: 130px;
-    background: rgba(255 255 255 / .1);
-    border: 3px solid transparent;
-    letter-spacing: 1 px;
-    transition: .3s;
-    color: #fff;
-    padding: 10px;
-}
-
-form > button {
-    background: #d407fd;
-    color: #fff;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 1rem;
-    padding: 10px;
-}
-
-form > button:hover.links > a :hover {
-    background: #e470fc;
-}
 
 
 
